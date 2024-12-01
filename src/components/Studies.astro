@@ -1,0 +1,33 @@
+---
+import StudiesItem from './StudiesItem.astro';
+
+const studies = [
+  {
+    title: "University of Costa Rica | Business Informatics",
+    date: "Progress 4th year",
+    description: "Completed a Bachelor's degree in Computer Science. I have a strong interest in computer science and I am always looking for new challenges to push my skills to the next level.",
+  },
+  {
+    title:"Udemy | React: De cero a experto ( Hooks y MERN )",
+    date: "Completed",
+    description:"Context API, MERN, Hooks, Firestore, JWT, Testing, Autenticaciones, Despliegues, CRUD, Logs, MUI, Multiple Routers..."
+  },
+
+  {
+  title: "Escuela de Enseñanza Real Internacional | B2 English Level Certification",
+  date: "Completed",
+  description: "Achieved B2 proficiency in English, demonstrating strong understanding and communication skills in professional and academic contexts. Focused on improving reading, writing, listening, and speaking abilities for everyday and technical environments."
+  }
+
+];
+---
+
+<ol class="flex flex-col items-center sm:items-start space-y-6">
+  {studies.map(study => (
+    <StudiesItem
+      title={study.title}
+      date={study.date}
+      description={study.description}
+    />
+  ))}
+</ol>

@@ -1,0 +1,82 @@
+---
+import React from '../icons/React.astro'
+import NET from '../icons/NET.astro'
+import NextJS from '../icons/NextJS.astro'
+import SocketIO from '../icons/SocketIO.astro'
+import NodeJS from '../icons/NodeJS.astro'
+import C from '../icons/C.astro'
+const TAGS = {
+    REACT: {
+        name: 'React',
+        class: "bg-black text-white hover:bg-white hover:text-black transition-all duration-200 ease-in-out",
+        icon: React,
+    },
+    NET: {
+        name: '.NET',
+        class: "bg-black text-white hover:bg-white hover:text-black transition-all duration-200 ease-in-out",
+        icon: NET,
+    },
+    SOCKETIO: {
+        name: 'Socket.IO',
+        class: "bg-black text-white hover:bg-white hover:text-black transition-all duration-200 ease-in-out",
+        icon: SocketIO,
+    },
+    NEXTJS: {
+        name: 'Next.js',
+        class: "bg-black text-white hover:bg-white hover:text-black transition-all duration-200 ease-in-out",
+        icon: NextJS,
+    },
+    NODEJS: {
+        name: 'Node.js',
+        class: "bg-black text-white hover:bg-white hover:text-black transition-all duration-200 ease-in-out",
+        icon: NodeJS,
+    },
+    C: {
+        name: 'C#',
+        class: "bg-black text-white hover:bg-white hover:text-black transition-all duration-200 ease-in-out",
+        icon: C,
+    },
+}
+
+const projects = [
+  {
+    title: 'TapNServe',
+    description: 'A restaurant management system designed to streamline operations and enhance the dining experience. Customers can browse menus, place pre-orders, and request assistance, while waitstaff manage tables and receive real-time notifications. The kitchen benefits from live order tracking and instant communication with the staff. ',
+    link: 'http://TapNServe.click',
+    github: 'https://github.com/ZarateBM/ClientTapNServe',
+    image:'',
+    tags: [TAGS.REACT, TAGS.SOCKETIO, TAGS.NEXTJS, TAGS.NODEJS]
+  },
+  {
+    title: 'Point of Sale',
+    description: 'Este sistema de punto de venta (POS) desarrollado con Windows Forms está diseñado para gestionar de manera eficiente las operaciones de venta, inventario y clientes en un entorno de negocio minorista. La integración con SAP Business One permite sincronizar datos clave, como inventarios, transacciones y reportes administrativos, asegurando un flujo de información centralizado y automatizado. ',
+    link: 'https://github.com/DilanSalas/PointOfSale',
+    github: 'https://github.com/DilanSalas/PointOfSale',
+    image:'',
+    tags: [TAGS.NET, TAGS.C]
+  },
+]
+---
+{
+    projects.map(({ title, description, link, github, image, tags }) => (
+        <article>
+            <h3 class="text-2xl font-semibold mb-2">{title}</h3>
+            <p class="text-lg text-pretty mb-4">{description}</p>
+            <ul class="flex flex-wrap gap-2 mb-4">
+                {tags.map((tag) => (
+                    <li class={`inline-flex items-center gap-2 ${tag.class} rounded-full py-1 px-3`}>
+                        <tag.icon class="w-6 h-6" />
+                        <span class="text-xs font-medium">{tag.name}</span>
+                    </li>
+                ))}
+            </ul>
+            {image && (
+                <img
+                    class="rounded shadow-2xl shadow-white/10"
+                    src={image}
+                    alt={`project img ${title}`}
+                />
+            )}
+        </article>
+    ))
+}
