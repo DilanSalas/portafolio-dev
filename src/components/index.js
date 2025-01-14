@@ -1,0 +1,19 @@
+
+export { default as Badge } from './Badge.astro';
+export { default as Card } from './Card.astro';
+export { default as ContactInfo } from './ContactInfo.astro';
+export { default as Header } from './Header.astro';
+export { default as Projects } from './Projects.astro';
+export { default as SectionContainer } from './SectionContainer.astro';
+export { default as SocialPill } from './SocialPill.astro';
+export { default as Studies } from './Studies.astro';
+export { default as Footer } from './Footer.astro';
+export { default as About } from './About.astro';
+export { default as Layout } from './Layout.astro';
+export { default as Card } from './Card.astro';
+export { default as Projects } from './Projects.astro';
+export { default as Studies } from './Studies.astro';
+export { default as ContactInfo } from './ContactInfo.astro';
+export { default as Header } from './Header.astro';
+export { default as Footer } from './Footer.astro';
+export { default as About } from './About.astro';
