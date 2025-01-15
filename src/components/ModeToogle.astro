@@ -1,0 +1,55 @@
+---
+// ThemeToggle.astro
+---
+
+<button
+  id="toggle-theme-btn"
+  class="relative p-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white rounded transition-colors duration-300"
+>
+  <div class="relative w-[1.2rem] h-[1.2rem]">
+    <span 
+      class="absolute inset-0 flex items-center justify-center transition-transform duration-500 rotate-0 dark:-rotate-90 dark:opacity-0"
+    >
+      🌞
+    </span>
+    <span 
+      class="absolute inset-0 flex items-center justify-center transition-transform duration-500 rotate-90 opacity-0 dark:rotate-0 dark:opacity-100"
+    >
+      🌙
+    </span>
+  </div>
+  <span class="sr-only">Toggle theme</span>
+</button>
+
+<script>
+  const theme = (() => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme');
+    }
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    return 'light';
+  })();
+
+  if (theme === 'light') {
+    document.documentElement.classList.remove('dark');
+  } else {
+    document.documentElement.classList.add('dark');
+  }
+
+  window.localStorage.setItem('theme', theme);
+
+  const handleToggleClick = () => {
+    const element = document.documentElement;
+    element.classList.toggle('dark');
+
+    const isDark = element.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  };
+
+  document.addEventListener('astro:page-load', () => {
+    const toggleButton = document.getElementById('toggle-theme-btn');
+    toggleButton?.addEventListener('click', handleToggleClick);
+  });
+</script>
