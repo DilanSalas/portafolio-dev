@@ -1,0 +1,57 @@
+{
+  "header_title": "Hola, soy Dyllan Salas",
+  "availability": "Desarrollador Web Disponible",
+  "position": "Diseñador & Desarrollador Web",
+  "description_part1": "Soy diseñador y desarrollador web con pasión por crear sitios hermosos y funcionales.",
+  "description_part2": "Tengo experiencia en desarrollo front-end y back-end, y",
+  "description_highlight": "siempre busco nuevos desafíos para llevar mis habilidades al siguiente nivel",
+  "description_part3": "Ya sea que necesites ayuda con tu sitio web o quieras aprender más sobre desarrollo web, estoy aquí para ayudarte.",
+  "linkedin": "LinkedIn",
+  "github": "GitHub",
+  "studies_title": "Cursos y Estudios",
+  "projects_title": "Proyectos",
+  "about_title": "Sobre Mí",
+  "contact_title": "Contacto",
+
+    "0title": "Universidad de Costa Rica | Informática Empresarial",
+    "0date": "4to año en progreso",
+    "0description": "Cursando la licenciatura en Informática Empresarial. Tengo un fuerte interés en las ciencias de la computación y siempre busco nuevos desafíos para llevar mis habilidades al siguiente nivel.",
+    
+    "1title": "Udemy | React: De cero a experto (Hooks y MERN)",
+    "1date": "Completado",
+    "1description": "Context API, MERN, Hooks, Firestore, JWT, Testing, Autenticaciones, Despliegues, CRUD, Logs, MUI, Múltiples Routers...",
+    
+    "2title": "Escuela de Enseñanza Real Internacional | Certificación de Nivel B2 de Inglés",
+    "2date": "Completado",
+    "2description": "Obtuve un nivel B2 de inglés, demostrando sólidas habilidades de comprensión y comunicación en contextos profesionales y académicos. Enfoque en mejorar habilidades de lectura, escritura, escucha y habla para entornos cotidianos y técnicos.",
+    
+    "ViewCode": "Ver Código",
+
+    "VisitProject": "Visitar Proyecto",
+
+    "0descriptionP": "Actualmente cursando una carrera en Informática Empresarial. Tengo un gran interés en la ciencia de la computación y siempre busco nuevos desafíos para llevar mis habilidades al siguiente nivel.",
+    "1descriptionP": "Context API, MERN, Hooks, Firestore, JWT, Testing, Autenticación, Despliegues, CRUD, Registros, MUI, Múltiples Enrutadores...",
+    "2descriptionP": "Obtuve un nivel B2 en inglés, demostrando una fuerte comprensión y habilidades de comunicación en contextos profesionales y académicos. Enfocado en mejorar las habilidades de lectura, escritura, escucha y habla para entornos cotidianos y técnicos.",
+  
+    
+      "label1": "Acerca de",
+      "text1": "Soy un desarrollador web con experiencia en el diseño de interfaces interactivas y la creación de soluciones Full Stack. Disfruto aprender nuevas tecnologías y mejorar mis habilidades para construir aplicaciones eficientes y escalables.",
+      "label2": "Lenguajes y Herramientas",
+      "list1": "Lenguajes de Programación: Java, Python, C#, JavaScript, TypeScript",
+      "list2": "Frameworks y Bibliotecas: React, Astro, .NET, MERN (MongoDB, Express, React, Node.js), Tailwind CSS, Oak (Deno)",
+      "list3": "Bases de Datos: SQL, MySQL; diseño y optimización de consultas",
+      "list4": "Herramientas y Metodologías: Node.js, Yarn, Docker, Git, Jest, Figma; mejores prácticas empresariales, análisis y diseño de sistemas",
+      "label3": "Habilidades",
+      "list5": "Desarrollo Frontend: Diseño y desarrollo de interfaces interactivas y responsivas con HTML, CSS, JavaScript y React, asegurando una experiencia fluida y atractiva.",
+      "list6": "Optimización UX/UI: Creación de páginas de aterrizaje efectivas optimizadas para la conversión, aplicando principios modernos de diseño y experiencia del usuario.",
+      "list7": "Bases de Datos: Gestión de bases de datos relacionales (MySQL) y no relacionales, con enfoque en diseño eficiente y consultas optimizadas.",
+      "list8": "Integración de Tecnología: Implementación de proyectos Full Stack con frameworks modernos como MERN y herramientas como Docker, Socket.io y Postman.",
+    
+   "contactMe": "Estoy disponible para nuevos proyectos, colaboraciones o cualquier consulta. ¡No dudes en contactarme!",
+
+    "Phone": "📞 Celular:",
+    "Email": "📧 Correo Electrónico:",
+    "Location": "📍 Ubicación:",
+    "Repositories": "Repositorios",
+    "AllRightsReserved": "Todos los Derechos Reservados"
+}
