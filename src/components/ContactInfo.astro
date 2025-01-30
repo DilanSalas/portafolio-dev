@@ -20,6 +20,7 @@ const contactInfo = {
     </h2>
     <p
       class="mt-4 text-blue-500 animate-fadeInUp"
+      data-i18n="contactMe"
     >
       I am available for new projects, collaborations, or any inquiries. Feel free to reach out!
     </p>
@@ -27,7 +28,7 @@ const contactInfo = {
       <div
         class="flex items-center justify-center space-x-4 animate-fadeInLeft delay-200"
       >
-        <span class="font-medium ">📧 Email:</span>
+        <span class="font-medium " data-i18n="Email">📧 Email:</span>
         <a
           href={`mailto:${contactInfo.email}`}
           class="text-blue-500 hover:underline transition-opacity duration-300 opacity-80 hover:opacity-100"
@@ -38,7 +39,7 @@ const contactInfo = {
       <div
         class="flex items-center justify-center space-x-4 animate-fadeInRight delay-300"
       >
-        <span class="font-medium ">📞 Phone:</span>
+        <span class="font-medium " data-i18n="Phone">📞 Phone:</span>
         <a
           href={`tel:${contactInfo.phone}`}
           class="text-blue-500 hover:underline transition-opacity duration-300 opacity-80 hover:opacity-100"
@@ -49,7 +50,7 @@ const contactInfo = {
       <div
         class="flex items-center justify-center space-x-4 animate-fadeInLeft delay-400"
       >
-        <span class="font-medium ">📍 Location:</span>
+        <span class="font-medium " data-i18n="Location">📍 Location:</span>
         <p class="text-blue-500">{contactInfo.location}</p>
       </div>
       <div
@@ -73,7 +74,7 @@ const contactInfo = {
           target="_blank"
           class="text-blue-500 hover:underline transition-opacity duration-300 opacity-80 hover:opacity-100"
         >
-          Repositories
+          <h1 data-i18n="Repositories">Repositories</h1>
         </a>
       </div>
     </div>

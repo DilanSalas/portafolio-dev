@@ -15,40 +15,41 @@ import About from '../components/About.astro';
 import ContactInfo from '../components/ContactInfo.astro';
 import ModeToogle from '../components/ModeToogle.astro';
 import FadeInSection from '../components/FadeInSection.astro';
+
 ---
 <Layout title="Portafolio | Dyllan Salas">
+
   <main class="px-5 lg:px-4">
     <FadeInSection class="fade-in-section">
       <SectionContainer class="py-16 lg:py-12 pb-16">
         <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex flex-wrap gap-x-4 pb-6 lg:pb-4 w-full">
-          <span class="flex-1">Hi, I'm Dyllan Salas</span>
+          <span class="flex-1" data-i18n="header_title">Hi, I'm Dyllan Salas</span>
           <a href="https://www.linkedin.com/in/dyllan-salas-4555a9337/" target="_blank" rel="noopener">
             <div class="flex justify-start items-center mt-1 sm:mt-0">
-              <Badge>Available Web Developer</Badge>
+              <Badge data-i18n="availability">Available Web Developer</Badge>
             </div>
           </a>
         </h1>
 
-        <h2 class="text-xl opacity-80 max-w-[700px] sm:text-2xl text-blue-500 dark:text-blue-300">
+        <h2 class="text-xl opacity-80 max-w-[700px] sm:text-2xl text-blue-500 dark:text-blue-300" data-i18n="position">
           Web Designer & Developer
         </h2>
 
         <p class="text-base sm:text-lg opacity-80 max-w-[700px] mt-4">
-          I am a web designer and developer with a passion for creating beautiful and functional websites. 
-          I have experience in both front-end and back-end development, and 
-          <span class="text-blue-500 dark:text-blue-300">I am always looking for new challenges to push my skills to the next level</span>.
-          Whether you need help with your website or just want to learn more about web development, 
-          I'm here to assist you.
+          <span data-i18n="description_part1">I am a web designer and developer with a passion for creating beautiful and functional websites.</span>
+          <span data-i18n="description_part2">I have experience in both front-end and back-end development, and</span>
+          <span class="text-blue-500 dark:text-blue-300" data-i18n="description_highlight">I am always looking for new challenges to push my skills to the next level</span>.
+          <span data-i18n="description_part3">Whether you need help with your website or just want to learn more about web development, I'm here to assist you.</span>
         </p>
 
         <nav class="flex flex-wrap gap-4 mt-6">
           <SocialPill href="https://www.linkedin.com/in/dyllan-salas-4555a9337/">
             <Linke class="w-6 h-6" />
-            LinkedIn
+            <span data-i18n="linkedin">LinkedIn</span>
           </SocialPill>
           <SocialPill href="https://github.com/DilanSalas">
             <GitHub class="w-6 h-6" />
-            GitHub
+            <span data-i18n="github">GitHub</span>
           </SocialPill>
           <SocialPill href="mailto:dilansalas200@gmail.com">
             <Email class="w-6 h-6" />
@@ -62,7 +63,7 @@ import FadeInSection from '../components/FadeInSection.astro';
       <SectionContainer id="studies" class="py-12 lg:py-8 pb-12 mt-8 lg:mt-12">
         <h2 class="text-3xl font-semibold mb-6 flex items-center gap-x-4 text-center lg:text-left">
           <Book class="size-7 text-blue-500" />
-          Courses and Studies
+          <span data-i18n="studies_title">Courses and Studies</span>
         </h2>
         <Studies />
       </SectionContainer>
@@ -72,7 +73,7 @@ import FadeInSection from '../components/FadeInSection.astro';
       <SectionContainer id="projects" class="py-12 lg:py-8 pb-12 mt-8 lg:mt-12">
         <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-center lg:text-left">
           <Code class="size-7" />
-          Projects
+          <span data-i18n="projects_title">Projects</span>
         </h2>
         <Projects />
       </SectionContainer>
@@ -80,12 +81,14 @@ import FadeInSection from '../components/FadeInSection.astro';
 
     <FadeInSection class="fade-in-section">
       <SectionContainer id="about" class="py-12 lg:py-8 pb-12 mt-8 lg:mt-12">
+        <h2 class="text-3xl font-semibold mb-6" data-i18n="about_title">About Me</h2>
         <About />
       </SectionContainer>
     </FadeInSection>
 
     <FadeInSection class="fade-in-section">
       <SectionContainer id="contact" class="py-12 lg:py-8 pb-12 mt-8 lg:mt-12">
+        <h2 class="text-3xl font-semibold mb-6" data-i18n="contact_title">Contact</h2>
         <ContactInfo />
       </SectionContainer>
     </FadeInSection>

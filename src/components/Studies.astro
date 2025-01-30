@@ -23,11 +23,13 @@ const studies = [
 ---
 
 <ol class="flex flex-col items-center sm:items-start space-y-6">
-  {studies.map(study => (
+  {Object.entries(studies).map(([index, study]) => (
     <StudiesItem
       title={study.title}
       date={study.date}
       description={study.description}
+      i18nKey={`${index}`} 
     />
   ))}
 </ol>
+

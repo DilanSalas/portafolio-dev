@@ -1,0 +1,31 @@
+---
+// src/components/LenguageSwitcher.astro
+import TranslateIcon from '../icons/TranslateIcon.astro';
+---
+
+<script is:inline>
+  const switchLanguage = (lang) => {
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang;
+    
+    fetch(`/locales/${lang}.json`)
+      .then(response => response.json())
+      .then(translations => {
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const key = element.dataset.i18n;
+          element.textContent = translations[key] || element.textContent;
+        });
+      });
+  }
+</script>
+
+<div class="language-switcher fixed bottom-6 z-50 flex gap-2">
+  <button onclick="switchLanguage('en')" class="px-3 py-1 border rounded-md text-white bg-black bg-opacity-60 dark:text-black dark:bg-white dark:bg-opacity-60 hover:bg-opacity-80 transition-all duration-200 flex items-center gap-2">
+    <TranslateIcon class="w-5 h-5" />
+    EN
+  </button>
+  <button onclick="switchLanguage('es')" class="px-3 py-1 border rounded-md text-white bg-black bg-opacity-60 dark:text-black dark:bg-white dark:bg-opacity-60 hover:bg-opacity-80 transition-all duration-200 flex items-center gap-2">
+    <TranslateIcon class="w-5 h-5" />
+    ES
+  </button>
+</div>

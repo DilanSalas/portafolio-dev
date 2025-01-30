@@ -3,6 +3,7 @@ import '@fontsource-variable/onest';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { ViewTransitions } from 'astro:transitions';
+import LanguageSwitcher from '../components/LenguageSwitcher.astro';
 
 interface Props {
   title: string;
@@ -43,9 +44,11 @@ const { title } = Astro.props;
     </script>
   </head>
   <body class="flex flex-col min-h-screen relative">
+    
     <Header />
     <main class="max-w-screen-xl mx-auto w-full px-4 flex-grow">
       <slot />
+      <LanguageSwitcher />
     </main>
     <div class="fixed inset-0 -z-10 w-full h-full bg-gradient-to-r dark:bg-gradient-to-br"></div>
     <Footer />
