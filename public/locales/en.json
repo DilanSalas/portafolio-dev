@@ -33,6 +33,9 @@
   "0descriptionP": "Currently pursuing a degree in Business Informatics. I have a strong interest in computer science and am always seeking new challenges to take my skills to the next level.",
   "1descriptionP": "Context API, MERN, Hooks, Firestore, JWT, Testing, Authentication, Deployments, CRUD, Logs, MUI, Multiple Routers...",
   "2descriptionP": "I obtained a B2 level in English, demonstrating strong comprehension and communication skills in professional and academic contexts. Focused on improving reading, writing, listening, and speaking skills for everyday and technical environments.",
+  "3descriptionP": "A journal management system built to securely store and manage entries, offering an intuitive interface for users to log their thoughts and experiences. The platform allows for easy sign-ins using Firestore authentication, ensuring secure access. Users can add, edit, and track their journal entries, with all data saved seamlessly in the cloud for easy retrieval and privacy.",
+    
+
 
   "label1": "About",
   "text1": "I'm a web developer with experience in designing interactive UIs and creating Full Stack solutions. I enjoy learning new technologies and improving my skills to build efficient, scalable apps.",
@@ -47,6 +50,7 @@
   "list7": "Databases: Managing relational (MySQL) and non-relational databases, focusing on efficient design and optimized queries.",
   "list8": "Tech Integration: Implementing Full Stack projects with modern frameworks like MERN and tools like Docker, Socket.io, and Postman.",
 
+  "contactMe1": "Contact me",
   "contactMe": " I am available for new projects, collaborations, or any inquiries. Feel free to reach out!",
   "Phone": "📞 Phone:",
     "Email": "📧 Email:",

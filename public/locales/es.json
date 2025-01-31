@@ -32,7 +32,7 @@
     "0descriptionP": "Actualmente cursando una carrera en Informática Empresarial. Tengo un gran interés en la ciencia de la computación y siempre busco nuevos desafíos para llevar mis habilidades al siguiente nivel.",
     "1descriptionP": "Context API, MERN, Hooks, Firestore, JWT, Testing, Autenticación, Despliegues, CRUD, Registros, MUI, Múltiples Enrutadores...",
     "2descriptionP": "Obtuve un nivel B2 en inglés, demostrando una fuerte comprensión y habilidades de comunicación en contextos profesionales y académicos. Enfocado en mejorar las habilidades de lectura, escritura, escucha y habla para entornos cotidianos y técnicos.",
-  
+    "3descriptionP": "Un sistema de gestión de revistas creado para almacenar y gestionar de forma segura las entradas, que ofrece una interfaz intuitiva para que los usuarios registren sus pensamientos y experiencias. La plataforma permite inicios de sesión sencillos mediante la autenticación de Firestore, lo que garantiza un acceso seguro. Los usuarios pueden agregar, editar y realizar un seguimiento de sus entradas de diario, con todos los datos guardados sin problemas en la nube para una fácil recuperación y privacidad.",
     
       "label1": "Acerca de",
       "text1": "Soy un desarrollador web con experiencia en el diseño de interfaces interactivas y la creación de soluciones Full Stack. Disfruto aprender nuevas tecnologías y mejorar mis habilidades para construir aplicaciones eficientes y escalables.",
@@ -47,6 +47,7 @@
       "list7": "Bases de Datos: Gestión de bases de datos relacionales (MySQL) y no relacionales, con enfoque en diseño eficiente y consultas optimizadas.",
       "list8": "Integración de Tecnología: Implementación de proyectos Full Stack con frameworks modernos como MERN y herramientas como Docker, Socket.io y Postman.",
     
+      "contactMe1": "Contactame",
    "contactMe": "Estoy disponible para nuevos proyectos, colaboraciones o cualquier consulta. ¡No dudes en contactarme!",
 
     "Phone": "📞 Celular:",
