@@ -30,12 +30,8 @@
 
   "VisitProject": "Visit Project",
 
-  "0descriptionP": "Currently pursuing a degree in Business Informatics. I have a strong interest in computer science and am always seeking new challenges to take my skills to the next level.",
-  "1descriptionP": "Context API, MERN, Hooks, Firestore, JWT, Testing, Authentication, Deployments, CRUD, Logs, MUI, Multiple Routers...",
-  "2descriptionP": "I obtained a B2 level in English, demonstrating strong comprehension and communication skills in professional and academic contexts. Focused on improving reading, writing, listening, and speaking skills for everyday and technical environments.",
-  "3descriptionP": "A journal management system built to securely store and manage entries, offering an intuitive interface for users to log their thoughts and experiences. The platform allows for easy sign-ins using Firestore authentication, ensuring secure access. Users can add, edit, and track their journal entries, with all data saved seamlessly in the cloud for easy retrieval and privacy.",
-    
-
+  "0descriptionP": "A restaurant management system designed to streamline operations and enhance the dining experience. Customers can browse menus, place pre-orders, and request assistance, while waitstaff manage tables and receive real-time notifications. The kitchen benefits from live order tracking and instant communication with the staff",
+  "1descriptionP": "This point of sale (POS) system developed with Windows Forms is designed to efficiently manage sales, inventory, and customer operations in a retail business environment. The integration with SAP Business One allows for the synchronization of key data, such as inventory, transactions, and administrative reports, ensuring a centralized and automated flow of information. ",
 
   "label1": "About",
   "text1": "I'm a web developer with experience in designing interactive UIs and creating Full Stack solutions. I enjoy learning new technologies and improving my skills to build efficient, scalable apps.",

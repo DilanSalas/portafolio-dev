@@ -29,10 +29,9 @@
 
     "VisitProject": "Visitar Proyecto",
 
-    "0descriptionP": "Actualmente cursando una carrera en Informática Empresarial. Tengo un gran interés en la ciencia de la computación y siempre busco nuevos desafíos para llevar mis habilidades al siguiente nivel.",
-    "1descriptionP": "Context API, MERN, Hooks, Firestore, JWT, Testing, Autenticación, Despliegues, CRUD, Registros, MUI, Múltiples Enrutadores...",
-    "2descriptionP": "Obtuve un nivel B2 en inglés, demostrando una fuerte comprensión y habilidades de comunicación en contextos profesionales y académicos. Enfocado en mejorar las habilidades de lectura, escritura, escucha y habla para entornos cotidianos y técnicos.",
-    "3descriptionP": "Un sistema de gestión de revistas creado para almacenar y gestionar de forma segura las entradas, que ofrece una interfaz intuitiva para que los usuarios registren sus pensamientos y experiencias. La plataforma permite inicios de sesión sencillos mediante la autenticación de Firestore, lo que garantiza un acceso seguro. Los usuarios pueden agregar, editar y realizar un seguimiento de sus entradas de diario, con todos los datos guardados sin problemas en la nube para una fácil recuperación y privacidad.",
+    "0descriptionP": "Un sistema de gestión de restaurantes diseñado para optimizar las operaciones y mejorar la experiencia gastronómica. Los clientes pueden consultar los menús, realizar pedidos por adelantado y solicitar asistencia, mientras que los camareros gestionan las mesas y reciben notificaciones en tiempo real. La cocina se beneficia del seguimiento de pedidos en directo y de la comunicación instantánea con el personal.",
+    "1descriptionP": "Este sistema de punto de venta (POS) desarrollado con Windows Forms está diseñado para gestionar de manera eficiente las ventas, el inventario y las operaciones de los clientes en un entorno comercial minorista. La integración con SAP Business One permite la sincronización de datos clave, como inventario, transacciones e informes administrativos, lo que garantiza un flujo de información centralizado y automatizado.",
+   
     
       "label1": "Acerca de",
       "text1": "Soy un desarrollador web con experiencia en el diseño de interfaces interactivas y la creación de soluciones Full Stack. Disfruto aprender nuevas tecnologías y mejorar mis habilidades para construir aplicaciones eficientes y escalables.",
