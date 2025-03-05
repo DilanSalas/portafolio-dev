@@ -1,7 +1,7 @@
 ---
 import React from '../icons/React.astro'
 import NET from '../icons/NET.astro'
-import NextJS from '../icons/NextJS.astro'
+import NestJS from '../icons/Nest.astro'
 import SocketIO from '../icons/SocketIO.astro'
 import NodeJS from '../icons/NodeJS.astro'
 import C from '../icons/C.astro'
@@ -22,10 +22,10 @@ const TAGS = {
         class: "bg-white text-black dark:bg-black dark:text-white border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200 ease-in-out",
         icon: SocketIO,
     },
-    NEXTJS: {
-        name: 'Next.js',
+    NESTJS: {
+        name: 'Nest.js',
         class: "bg-white text-black dark:bg-black dark:text-white border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200 ease-in-out",
-        icon: NextJS,
+        icon: NestJS,
     },
     NODEJS: {
         name: 'Node.js',
@@ -46,7 +46,7 @@ const projects = [
     link: 'http://TapNServe.click',
     github: 'https://github.com/ZarateBM/ClientTapNServe',
     image:'/TapNServe.png',
-    tags: [TAGS.REACT, TAGS.SOCKETIO, TAGS.NEXTJS, TAGS.NODEJS]
+    tags: [TAGS.REACT, TAGS.SOCKETIO, TAGS.NESTJS, TAGS.NODEJS]
   },
   {
     title: 'Point of Sale',
@@ -55,22 +55,6 @@ const projects = [
     github: 'https://github.com/DilanSalas/PointOfSale',
     image:'/PointOfSale.png',
     tags: [TAGS.NET, TAGS.C]
-  },
-  {
-    title: 'Hotel-Luxury',
-    description: 'is a web application developed using .NET and C#, designed for a hotel business offering various customer packages. It integrates dynamic content management, user-friendly interfaces, and secure booking functionalities. The site provides seamless navigation through its responsive design and utilizes modern web technologies to ensure performance and scalability. The backend handles package management, booking systems, and customer interaction, ensuring a smooth user experience from browsing to checkout.',
-    link: 'https://github.com/DilanSalas/Hotel-Code',
-    github: 'https://github.com/DilanSalas/Hotel-Code',
-    image:'/Hotel-Luxury.png',
-    tags: [TAGS.NET, TAGS.C]
-  },
-  {
-    title: 'Journal',
-    description: 'A journal management system built to securely store and manage entries, offering an intuitive interface for users to log their thoughts and experiences. The platform allows for easy sign-ins using Firestore authentication, ensuring secure access. Users can add, edit, and track their journal entries, with all data saved seamlessly in the cloud for easy retrieval and privacy.',
-    link: 'https://journal-app-lilac-eight.vercel.app/',
-    github: 'https://github.com/DilanSalas/journal-app',
-    image:'/Journal.png',
-    tags: [TAGS.REACT, TAGS.NODEJS]
   },
 
 ]

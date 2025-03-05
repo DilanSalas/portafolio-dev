@@ -1,0 +1,94 @@
+---
+// Importar los iconos desde la carpeta icons
+import TypeScript from "../icons/TypeScript.astro";
+import Python from "../icons/Python.astro";
+import Java from "../icons/Java.astro";
+import CSharp from "../icons/C.astro";
+import ReactIcon from "../icons/React.astro";
+import DotNet from "../icons/NET.astro";
+import NodeJS from "../icons/NodeJS.astro";
+import MongoDB from "../icons/MongoDB.astro";
+import TailwindCSS from "../icons/TailwindCSS.astro";
+import Git from "../icons/GitHub.astro";
+import Docker from "../icons/Docker.astro";
+import Jest from "../icons/Jest.astro";
+import Figma from "../icons/Figma.astro";
+import Yarn from "../icons/Yarn.astro";
+import Brain from "../icons/Brain.astro";
+
+interface TechItem {
+  name: string;
+  icon: any; // Usamos `any` porque los componentes Astro no tienen un tipo específico
+  color: string; // Color de fondo del icono
+  textColor: string; // Color del texto para modo oscuro/claro
+}
+
+const technologies: TechItem[] = [
+  // Lenguajes de programación
+  { name: "TypeScript", icon: TypeScript, color: "bg-blue-500", textColor: "text-blue-500" },
+  { name: "Python", icon: Python, color: "bg-green-600", textColor: "text-green-600" },
+  { name: "Java", icon: Java, color: "bg-red-600", textColor: "text-red-600" },
+  { name: "C#", icon: CSharp, color: "bg-purple-600", textColor: "text-purple-600" },
+
+  // Frameworks y librerías
+  { name: "React", icon: ReactIcon, color: "bg-cyan-500", textColor: "text-cyan-500" },
+  { name: ".NET", icon: DotNet, color: "bg-violet-600", textColor: "text-violet-600" },
+  { name: "Node.js", icon: NodeJS, color: "bg-green-500", textColor: "text-green-500" },
+  { name: "MongoDB", icon: MongoDB, color: "bg-green-700", textColor: "text-green-700" },
+  { name: "Tailwind CSS", icon: TailwindCSS, color: "bg-cyan-400", textColor: "text-cyan-400" },
+
+  // Herramientas
+  { name: "Git", icon: Git, color: "bg-orange-600", textColor: "text-orange-600" },
+  { name: "Docker", icon: Docker, color: "bg-blue-500", textColor: "text-blue-500" },
+  { name: "Jest", icon: Jest, color: "bg-red-500", textColor: "text-red-500" },
+  { name: "Figma", icon: Figma, color: "bg-purple-500", textColor: "text-purple-500" },
+  { name: "Yarn", icon: Yarn, color: "bg-blue-400", textColor: "text-blue-400" },
+];
+
+// Duplicar las tecnologías para crear un efecto de desplazamiento infinito
+const allTechnologies = [...technologies, ...technologies];
+---
+
+<div class="text-3xl font-semibold mb-8 flex gap-x-4 items-center text-center lg:text-left" >
+    <Brain class="size-6 text-blue-500" />
+    <h2 class="text-2xl font-semibold" data-i18n="about_title">Technologies</h2>
+  </div>
+
+<div class="relative w-full overflow-hidden">
+
+  <!-- Contenedor de tecnologías -->
+  <div class="overflow-hidden">
+    <div
+      class="flex items-center space-x-6 py-2 animate-scroll"
+      style="width: max-content;"
+    >
+      {
+        allTechnologies.map((tech) => (
+          <div class="flex flex-col items-center justify-center w-20 flex-shrink-0">
+            <div class={`${tech.color} p-3 rounded-full mb-2`}>
+              <tech.icon class="w-6 h-6 text-white" />
+            </div>
+            <span class={`text-xs font-medium text-center ${tech.textColor} dark:text-white`}>
+              {tech.name}
+            </span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+</style>

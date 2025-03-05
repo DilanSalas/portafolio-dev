@@ -1,5 +1,4 @@
 ---
-// src/components/LenguageSwitcher.astro
 import TranslateIcon from '../icons/TranslateIcon.astro';
 ---
 
@@ -17,15 +16,90 @@ import TranslateIcon from '../icons/TranslateIcon.astro';
         });
       });
   }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const languageDropdown = document.getElementById('language-dropdown');
+    if (languageDropdown) {
+      languageDropdown.addEventListener('change', (event) => {
+        switchLanguage(event.target.value);
+      });
+    }
+  });
 </script>
 
-<div class="language-switcher fixed bottom-6 z-50 flex gap-2">
-  <button onclick="switchLanguage('en')" class="px-3 py-1 border rounded-md text-white bg-black bg-opacity-60 dark:text-black dark:bg-white dark:bg-opacity-60 hover:bg-opacity-80 transition-all duration-200 flex items-center gap-2">
-    <TranslateIcon class="w-5 h-5" />
-    EN
-  </button>
-  <button onclick="switchLanguage('es')" class="px-3 py-1 border rounded-md text-white bg-black bg-opacity-60 dark:text-black dark:bg-white dark:bg-opacity-60 hover:bg-opacity-80 transition-all duration-200 flex items-center gap-2">
-    <TranslateIcon class="w-5 h-5" />
-    ES
-  </button>
+<div class="language-switcher fixed bottom-6 z-50">
+  <div class="
+    relative
+    flex items-center
+    px-3 py-1
+    border rounded-md
+    bg-white bg-opacity-60
+    dark:bg-black dark:bg-opacity-60
+    hover:bg-opacity-80
+    transition-all duration-200
+    cursor-pointer
+    group
+  ">
+    <TranslateIcon class="w-5 h-5 mr-2 text-black dark:text-white" />
+
+    <select
+      id="language-dropdown"
+      class="
+        absolute inset-0
+        w-full h-full
+        opacity-0
+        cursor-pointer
+      "
+    >
+      <option value="en">EN</option>
+      <option value="es">ES</option>
+    </select>
+
+    <span class="mr-2 text-black dark:text-white">EN</span>
+
+    <div class="pointer-events-none transform group-hover:translate-y-0.5 transition-transform duration-200">
+      <svg
+        class="w-4 h-4 text-black dark:text-white"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 9l-7 7-7-7"
+        />
+      </svg>
+    </div>
+  </div>
 </div>
+
+<style>
+  .language-switcher select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .language-switcher option {
+    background: white;
+    color: black;
+  }
+
+  .language-switcher option:checked {
+    background: black;
+    color: white;
+  }
+
+  .dark .language-switcher option {
+    background: black;
+    color: white;
+  }
+
+  .dark .language-switcher option:checked {
+    background: white;
+    color: black;
+  }
+</style>

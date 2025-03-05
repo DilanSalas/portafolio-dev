@@ -10,78 +10,81 @@ const navLinks = [
 ];
 ---
 
-<header class="w-full max-w-7xl mx-auto px-4 py-5">
-  <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+<!-- Cambio específico: Añadir sticky, top-0, z-50, bg-[rgba(240,248,255,0.9)], dark:bg-[#1c173442], shadow-sm -->
+<header class="sticky top-0 z-50 w-full bg-[rgba(240,248,255,0.9)] dark:bg-[#1c173442] shadow-sm">
+  <div class="w-full max-w-7xl mx-auto px-4 py-5">
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
 
-    <div class="flex items-center justify-between w-full md:w-auto">
-      <ModeToogle/>
-      <div class="mx-5"> 
-        <img
-          src="/perfil.jpg"
-          alt="avatar"
-          class="rounded-full w-16 h-16 md:w-20 md:h-20"
-        />
-      </div>
-      <button
-        id="mobile-menu-toggle"
-        class="md:hidden text-gray-600 focus:outline-none"
-        aria-label="Toggle mobile menu"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
+      <div class="flex items-center justify-between w-full md:w-auto">
+        <ModeToogle/>
+        <div class="mx-5"> 
+          <img
+            src="/perfil.jpg"
+            alt="avatar"
+            class="rounded-full w-16 h-16 md:w-20 md:h-20"
           />
-        </svg>
-      </button>
-    </div>
+        </div>
+        <button
+          id="mobile-menu-toggle"
+          class="md:hidden text-gray-600 focus:outline-none"
+          aria-label="Toggle mobile menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
 
-    <nav
-      id="mobile-menu"
-      class="
-        w-full md:w-auto
-        hidden md:block
-        transition-all duration-300 ease-in-out
-      "
-    >
-      <ul class="
-        flex flex-col md:flex-row
-        gap-4 md:gap-14
-        justify-center
-        items-center
-        text-center md:text-left
-      ">
-        {navLinks.map((link) => (
-          <li>
-            <a
-              href={link.href}
-              class="
-                text-gray-600
-                hover:text-gray-900
-                transition-colors
-                duration-200
-                px-3 py-2
-                rounded-md
-                hover:bg-gray-100
-                dark:text-gray-300
-                dark:hover:text-white
-                dark:hover:bg-gray-700
-              "
-            >
-              {link.text}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+      <nav
+        id="mobile-menu"
+        class="
+          w-full md:w-auto
+          hidden md:block
+          transition-all duration-300 ease-in-out
+        "
+      >
+        <ul class="
+          flex flex-col md:flex-row
+          gap-4 md:gap-14
+          justify-center
+          items-center
+          text-center md:text-left
+        ">
+          {navLinks.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="
+                  text-gray-600
+                  hover:text-gray-900
+                  transition-colors
+                  duration-200
+                  px-3 py-2
+                  rounded-md
+                  hover:bg-gray-100
+                  dark:text-gray-300
+                  dark:hover:text-white
+                  dark:hover:bg-gray-700
+                "
+              >
+                {link.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 
