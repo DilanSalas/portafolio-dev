@@ -2,6 +2,12 @@
 const { class: className, id } = Astro.props;
 ---
 
-<section id={id} class={`w-full lg:w-[740px] mx-auto ${className} py-12 sm:py-16 lg:py-24`}>
-    <slot />
+<section
+  id={id}
+  class={`w-full lg:w-[740px] mx-auto ${className} py-12 sm:py-16 lg:py-24 
+    transform transition-all duration-250 ease-in-out 
+    hover:scale-105 hover:shadow-lg hover:bg-opacity-90
+    dark:hover:bg-opacity-100 rounded-lg `}
+>
+  <slot />
 </section>

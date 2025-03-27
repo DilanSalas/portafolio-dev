@@ -1,4 +1,12 @@
 {
+  "Home": "Inicio",
+  "About": "Sobre",
+  "Contact": "Contacto",
+  "Studies": "Estudios", 
+  "Projects": "Proyectos",
+
+
+
   "header_title": "Hola, soy Dyllan Salas",
   "availability": "Desarrollador Web Disponible",
   "position": "Diseñador & Desarrollador Web",
@@ -10,7 +18,8 @@
   "github": "GitHub",
   "studies_title": "Cursos y Estudios",
   "projects_title": "Proyectos",
-  "about_title": "Tecnologías",
+  "banner_title": "Technologies",
+  "about_title": "About Me",
   "contact_title": "Contacto",
 
     "0title": "Universidad de Costa Rica | Informática Empresarial",
@@ -31,7 +40,7 @@
 
     "0descriptionP": "Un sistema de gestión de restaurantes diseñado para optimizar las operaciones y mejorar la experiencia gastronómica. Los clientes pueden consultar los menús, realizar pedidos por adelantado y solicitar asistencia, mientras que los camareros gestionan las mesas y reciben notificaciones en tiempo real. La cocina se beneficia del seguimiento de pedidos en directo y de la comunicación instantánea con el personal.",
     "1descriptionP": "Este sistema de punto de venta (POS) desarrollado con Windows Forms está diseñado para gestionar de manera eficiente las ventas, el inventario y las operaciones de los clientes en un entorno comercial minorista. La integración con SAP Business One permite la sincronización de datos clave, como inventario, transacciones e informes administrativos, lo que garantiza un flujo de información centralizado y automatizado.",
-   
+    "2descriptionP": "TimeGrid es un calendario en línea para la gestión eficiente de eventos y tareas. Proporciona una interfaz moderna con múltiples vistas y opciones de personalización, incluyendo la selección de color para los eventos. Los usuarios pueden crear, editar y organizar sus horarios de manera fácil, permitiendo la colaboración con la gestión de eventos compartidos.",
     
       "label1": "Acerca de",
       "text1": "Soy un desarrollador web con experiencia en el diseño de interfaces interactivas y la creación de soluciones Full Stack. Disfruto aprender nuevas tecnologías y mejorar mis habilidades para construir aplicaciones eficientes y escalables.",
@@ -46,7 +55,7 @@
       "list7": "Bases de Datos: Gestión de bases de datos relacionales (MySQL) y no relacionales, con enfoque en diseño eficiente y consultas optimizadas.",
       "list8": "Integración de Tecnología: Implementación de proyectos Full Stack con frameworks modernos como MERN y herramientas como Docker, Socket.io y Postman.",
     
-      "contactMe1": "Contactame",
+   "contactMe1": "Contactame",
    "contactMe": "Estoy disponible para nuevos proyectos, colaboraciones o cualquier consulta. ¡No dudes en contactarme!",
 
     "Phone": "📞 Celular:",

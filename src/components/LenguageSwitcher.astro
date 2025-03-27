@@ -3,11 +3,18 @@ import TranslateIcon from '../icons/TranslateIcon.astro';
 ---
 
 <script is:inline>
-  const switchLanguage = (lang) => {
-    localStorage.setItem('lang', lang);
-    document.documentElement.lang = lang;
+  // Obtener el idioma guardado en localStorage o establecer el predeterminado a "es"
+  const savedLang = localStorage.getItem('lang') || 'es';
+  
+  // Cambiar idioma y actualizar en la interfaz
+  const switchLanguage = () => {
+    const currentLang = localStorage.getItem('lang') || 'es';
+    const newLang = currentLang === 'en' ? 'es' : 'en';
     
-    fetch(`/locales/${lang}.json`)
+    localStorage.setItem('lang', newLang);
+    document.documentElement.lang = newLang;
+    
+    fetch(`/locales/${newLang}.json`)
       .then(response => response.json())
       .then(translations => {
         document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -15,91 +22,43 @@ import TranslateIcon from '../icons/TranslateIcon.astro';
           element.textContent = translations[key] || element.textContent;
         });
       });
+
+    // Actualizar el idioma mostrado
+    const languageLabel = document.getElementById('language-label');
+    languageLabel.textContent = newLang === 'en' ? 'EN' : 'ES';
   }
 
+  // Establecer el idioma al cargar la página
   document.addEventListener('DOMContentLoaded', () => {
-    const languageDropdown = document.getElementById('language-dropdown');
-    if (languageDropdown) {
-      languageDropdown.addEventListener('change', (event) => {
-        switchLanguage(event.target.value);
-      });
+    const languageLabel = document.getElementById('language-label');
+    languageLabel.textContent = savedLang === 'en' ? 'EN' : 'ES';
+    
+    // Configurar el evento de clic para cambiar el idioma
+    const languageSwitcher = document.querySelector('.language-switcher-container');
+    if (languageSwitcher) {
+      languageSwitcher.addEventListener('click', switchLanguage);
     }
   });
 </script>
-
-<div class="language-switcher fixed bottom-6 z-50">
+<div class="language-switcher-container fixed bottom-6 right-6 z-50">
   <div class="
     relative
     flex items-center
-    px-3 py-1
-    border rounded-md
+    justify-center
+    w-20 h-20
+    border rounded-full
     bg-white bg-opacity-60
     dark:bg-black dark:bg-opacity-60
     hover:bg-opacity-80
     transition-all duration-200
     cursor-pointer
     group
+    hover:ring-2 hover:ring-black
+    dark:hover:ring-2 dark:hover:ring-white
   ">
-    <TranslateIcon class="w-5 h-5 mr-2 text-black dark:text-white" />
 
-    <select
-      id="language-dropdown"
-      class="
-        absolute inset-0
-        w-full h-full
-        opacity-0
-        cursor-pointer
-      "
-    >
-      <option value="en">EN</option>
-      <option value="es">ES</option>
-    </select>
-
-    <span class="mr-2 text-black dark:text-white">EN</span>
-
-    <div class="pointer-events-none transform group-hover:translate-y-0.5 transition-transform duration-200">
-      <svg
-        class="w-4 h-4 text-black dark:text-white"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M19 9l-7 7-7-7"
-        />
-      </svg>
-    </div>
+    <span id="language-label" class="text-black dark:text-white  font-semibold mr-2">ES</span>
+    <TranslateIcon class="w-6 h-6 text-black dark:text-white" />
   </div>
 </div>
 
-<style>
-  .language-switcher select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-
-  .language-switcher option {
-    background: white;
-    color: black;
-  }
-
-  .language-switcher option:checked {
-    background: black;
-    color: white;
-  }
-
-  .dark .language-switcher option {
-    background: black;
-    color: white;
-  }
-
-  .dark .language-switcher option:checked {
-    background: white;
-    color: black;
-  }
-</style>

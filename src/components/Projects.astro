@@ -5,6 +5,8 @@ import NestJS from '../icons/Nest.astro'
 import SocketIO from '../icons/SocketIO.astro'
 import NodeJS from '../icons/NodeJS.astro'
 import C from '../icons/C.astro'
+import Yarn from '../icons/Yarn.astro'
+import Express from '../icons/Express.astro'
 
 const TAGS = {
     REACT: {
@@ -37,6 +39,18 @@ const TAGS = {
         class: "bg-white text-black dark:bg-black dark:text-white border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200 ease-in-out",
         icon: C,
     },
+      YARN: {
+        name: 'Yarn',
+        class: "bg-white text-black dark:bg-black dark:text-white border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200 ease-in-out",
+        icon: Yarn,
+    },
+    EXPRESS: {
+        name: 'Express',
+        class: "bg-white text-black dark:bg-black dark:text-white border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200 ease-in-out",
+        icon: Express,
+    },
+    
+
 }
 
 const projects = [
@@ -55,6 +69,14 @@ const projects = [
     github: 'https://github.com/DilanSalas/PointOfSale',
     image:'/PointOfSale.png',
     tags: [TAGS.NET, TAGS.C]
+  },
+  {
+    title: 'TimeGrid',
+    description: 'TimeGrid is an online calendar for efficient event and task management. It offers a modern interface with multiple views and customization options, including color selection for events. Users can easily create, edit, and organize their schedules while enabling collaboration with shared event management.',
+    link: 'https://time-grid.vercel.app/',
+    github: 'https://github.com/DilanSalas/TimeGrid',
+    image:'/TimeGrid.png',
+    tags: [TAGS.REACT, TAGS.NODEJS, TAGS.EXPRESS]
   },
 
 ]
