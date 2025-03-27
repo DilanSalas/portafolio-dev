@@ -12,9 +12,10 @@ import TailwindCSS from "../icons/TailwindCSS.astro";
 import Git from "../icons/GitHub.astro";
 import Docker from "../icons/Docker.astro";
 import Jest from "../icons/Jest.astro";
-import Figma from "../icons/Figma.astro";
 import Yarn from "../icons/Yarn.astro";
 import Brain from "../icons/Brain.astro";
+import SocketIO from "../icons/SocketIO.astro";
+import Express from "../icons/Express.astro"
 
 interface TechItem {
   name: string;
@@ -24,25 +25,21 @@ interface TechItem {
 }
 
 const technologies: TechItem[] = [
-  // Lenguajes de programación
-  { name: "TypeScript", icon: TypeScript, color: "bg-blue-500", textColor: "text-blue-500" },
-  { name: "Python", icon: Python, color: "bg-green-600", textColor: "text-green-600" },
-  { name: "Java", icon: Java, color: "bg-red-600", textColor: "text-red-600" },
-  { name: "C#", icon: CSharp, color: "bg-purple-600", textColor: "text-purple-600" },
-
-  // Frameworks y librerías
-  { name: "React", icon: ReactIcon, color: "bg-cyan-500", textColor: "text-cyan-500" },
-  { name: ".NET", icon: DotNet, color: "bg-violet-600", textColor: "text-violet-600" },
-  { name: "Node.js", icon: NodeJS, color: "bg-green-500", textColor: "text-green-500" },
-  { name: "MongoDB", icon: MongoDB, color: "bg-green-700", textColor: "text-green-700" },
-  { name: "Tailwind CSS", icon: TailwindCSS, color: "bg-cyan-400", textColor: "text-cyan-400" },
-
-  // Herramientas
-  { name: "Git", icon: Git, color: "bg-orange-600", textColor: "text-orange-600" },
-  { name: "Docker", icon: Docker, color: "bg-blue-500", textColor: "text-blue-500" },
-  { name: "Jest", icon: Jest, color: "bg-red-500", textColor: "text-red-500" },
-  { name: "Figma", icon: Figma, color: "bg-purple-500", textColor: "text-purple-500" },
-  { name: "Yarn", icon: Yarn, color: "bg-blue-400", textColor: "text-blue-400" },
+  { name: "TypeScript", icon: TypeScript, color: "bg-blue-500", textColor: "text-blue-500 dark:text-blue-500" },
+  { name: "Python", icon: Python, color: "bg-green-600", textColor: "text-green-600 dark:text-green-600" },
+  { name: "Java", icon: Java, color: "bg-red-600", textColor: "text-red-600 dark:text-red-600" },
+  { name: "C#", icon: CSharp, color: "bg-purple-600", textColor: "text-purple-600 dark:text-purple-600" },
+  { name: "React", icon: ReactIcon, color: "bg-cyan-500", textColor: "text-cyan-500 dark:text-cyan-500" },
+  { name: ".NET", icon: DotNet, color: "bg-purple-600", textColor: "text-blue-600 dark:text-blue-600" },
+  { name: "Node.js", icon: NodeJS, color: "bg-green-500", textColor: "text-green-500 dark:text-green-500" },
+  { name: "MongoDB", icon: MongoDB, color: "bg-green-700", textColor: "text-green-700 dark:text-green-700" },
+  { name: "Tailwind CSS", icon: TailwindCSS, color: "bg-purple-400", textColor: "text-purple-400 dark:text-purple-400" },
+  { name: "Git", icon: Git, color: "bg-orange-600", textColor: "text-orange-600 dark:text-orange-600" },
+  { name: "Docker", icon: Docker, color: "bg-blue-500", textColor: "text-blue-500 dark:text-blue-500" },
+  { name: "Jest", icon: Jest, color: "bg-red-500", textColor: "text-red-500 dark:text-red-500" },
+  { name: "Yarn", icon: Yarn, color: "bg-blue-400", textColor: "text-blue-400 dark:text-blue-400" },
+  {name: "Socket.io", icon: SocketIO, color: "bg-blue-500", textColor: "text-blue-500 dark: text-blue-500  "},
+  {name: "Expressjs", icon: Express, color: "bg-blue-500", textColor: "text-blue-500 dark: text-blue-500  "},
 ];
 
 // Duplicar las tecnologías para crear un efecto de desplazamiento infinito

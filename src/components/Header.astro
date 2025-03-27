@@ -1,5 +1,6 @@
 ---
 import ModeToogle from "./ModeToogle.astro";
+import LanguageSwitcher from "./LenguageSwitcher.astro"
 
 const navLinks = [
   { href: '#top', text: 'Home' },
@@ -17,6 +18,7 @@ const navLinks = [
 
       <div class="flex items-center justify-between w-full md:w-auto">
         <ModeToogle/>
+        <LanguageSwitcher />
         <div class="mx-5"> 
           <img
             src="/perfil.jpg"

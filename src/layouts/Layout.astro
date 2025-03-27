@@ -3,7 +3,6 @@ import '@fontsource-variable/onest';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { ViewTransitions } from 'astro:transitions';
-import LanguageSwitcher from '../components/LenguageSwitcher.astro';
 
 interface Props {
   title: string;
@@ -23,7 +22,6 @@ const { title } = Astro.props;
     <ViewTransitions />
     <title>{title}</title>
     <script>
-      // Inicialización del tema
       const theme = (() => {
         if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
           return localStorage.getItem('theme');
@@ -48,7 +46,6 @@ const { title } = Astro.props;
 
     <main class="max-w-screen-xl mx-auto w-full px-4 flex-grow">
       <slot />
-      <LanguageSwitcher />
     </main>
 
     <Footer/>
@@ -92,7 +89,7 @@ const { title } = Astro.props;
       background: radial-gradient(125% 125% at 50% 10%, #000000 35%, rgb(4, 0, 255) 100%);
     }
 
-    /* Animación del fondo */
+    /* Animación del fondo
     @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -119,7 +116,7 @@ const { title } = Astro.props;
 .dark .animate-gradient {
   animation: gradientAnimation 10s ease infinite;
   background-size: 400% 400%;
-}
+} */
 
 
     @media (prefers-reduced-motion: reduce) {
