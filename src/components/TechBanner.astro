@@ -16,12 +16,13 @@ import Yarn from "../icons/Yarn.astro";
 import Brain from "../icons/Brain.astro";
 import SocketIO from "../icons/SocketIO.astro";
 import Express from "../icons/Express.astro"
+import Firebase from "../icons/Firebase.astro";
 
 interface TechItem {
   name: string;
-  icon: any; // Usamos `any` porque los componentes Astro no tienen un tipo específico
-  color: string; // Color de fondo del icono
-  textColor: string; // Color del texto para modo oscuro/claro
+  icon: any;
+  color: string; 
+  textColor: string; 
 }
 
 const technologies: TechItem[] = [
@@ -40,6 +41,7 @@ const technologies: TechItem[] = [
   { name: "Yarn", icon: Yarn, color: "bg-blue-400", textColor: "text-blue-400 dark:text-blue-400" },
   {name: "Socket.io", icon: SocketIO, color: "bg-blue-500", textColor: "text-blue-500 dark: text-blue-500  "},
   {name: "Expressjs", icon: Express, color: "bg-blue-500", textColor: "text-blue-500 dark: text-blue-500  "},
+  {name: "Firebase", icon: Firebase, color: "bg-red-500", textColor: "text-blue-500 dark: text-blue-500  "},
 ];
 
 // Duplicar las tecnologías para crear un efecto de desplazamiento infinito
