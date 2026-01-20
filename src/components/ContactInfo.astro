@@ -9,27 +9,27 @@ const contactInfo = {
 };
 ---
 
-<section class=" px-6 py-12 sm:px-12 lg:px-24 rounded-lg shadow-lg shadow-black/50 overflow-hidden">
-  <div
-    class="max-w-4xl mx-auto text-center transition-transform duration-700 transform scale-95 hover:scale-100"
-  >
+<section class="px-6 py-12 sm:px-12 lg:px-24 rounded-lg shadow-lg shadow-black/50 overflow-hidden">
+  <div class="max-w-4xl mx-auto text-center transition-transform duration-700 transform scale-95 hover:scale-100">
+
     <h2
       class="text-3xl font-bold animate-fadeInDown"
-      data-i18n="contactMe1"
+      data-i18n="contact.title"
     >
       Contact Me
     </h2>
+
     <p
       class="mt-4 text-blue-500 animate-fadeInUp"
-      data-i18n="contactMe"
+      data-i18n="contact.subtitle"
     >
       I am available for new projects, collaborations, or any inquiries. Feel free to reach out!
     </p>
+
     <div class="mt-8 space-y-6">
-      <div
-        class="flex items-center justify-center space-x-4 animate-fadeInLeft delay-200"
-      >
-        <span class="font-medium " data-i18n="Email">📧 Email:</span>
+
+      <div class="flex items-center justify-center space-x-4 animate-fadeInLeft delay-200">
+        <span class="font-medium" data-i18n="contact.email">📧 Email:</span>
         <a
           href={`mailto:${contactInfo.email}`}
           class="text-blue-500 hover:underline transition-opacity duration-300 opacity-80 hover:opacity-100"
@@ -37,10 +37,9 @@ const contactInfo = {
           {contactInfo.email}
         </a>
       </div>
-      <div
-        class="flex items-center justify-center space-x-4 animate-fadeInRight delay-300"
-      >
-        <span class="font-medium " data-i18n="Phone">📞 Phone:</span>
+
+      <div class="flex items-center justify-center space-x-4 animate-fadeInRight delay-300">
+        <span class="font-medium" data-i18n="contact.phone">📞 Phone:</span>
         <a
           href={`tel:${contactInfo.phone}`}
           class="text-blue-500 hover:underline transition-opacity duration-300 opacity-80 hover:opacity-100"
@@ -48,16 +47,14 @@ const contactInfo = {
           {contactInfo.phone}
         </a>
       </div>
-      <div
-        class="flex items-center justify-center space-x-4 animate-fadeInLeft delay-400"
-      >
-        <span class="font-medium " data-i18n="Location">📍 Location:</span>
+
+      <div class="flex items-center justify-center space-x-4 animate-fadeInLeft delay-400">
+        <span class="font-medium" data-i18n="contact.location">📍 Location:</span>
         <p class="text-blue-500">{contactInfo.location}</p>
       </div>
-      <div
-        class="flex items-center justify-center space-x-4 animate-fadeInRight delay-500"
-      >
-        <span class="font-medium">🔗 LinkedIn:</span>
+
+      <div class="flex items-center justify-center space-x-4 animate-fadeInRight delay-500">
+        <span class="font-medium" data-i18n="contact.linkedin">🔗 LinkedIn:</span>
         <a
           href={contactInfo.linkedin}
           target="_blank"
@@ -66,80 +63,19 @@ const contactInfo = {
           Profile
         </a>
       </div>
-      <div
-        class="flex items-center justify-center space-x-4 animate-fadeInLeft delay-600"
-      >
-        <span class="font-medium ">💻 GitHub:</span>
+
+      <div class="flex items-center justify-center space-x-4 animate-fadeInLeft delay-600">
+        <span class="font-medium" data-i18n="contact.github">💻 GitHub:</span>
         <a
           href={contactInfo.github}
           target="_blank"
           class="text-blue-500 hover:underline transition-opacity duration-300 opacity-80 hover:opacity-100"
+          data-i18n="contact.repositories"
         >
-          <h1 data-i18n="Repositories">Repositories</h1>
+          Repositories
         </a>
       </div>
+
     </div>
   </div>
 </section>
-
-<style>
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-fadeInDown {
-  animation: fadeInDown 1s ease-in-out;
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 1s ease-in-out;
-}
-
-.animate-fadeInLeft {
-  animation: fadeInLeft 1s ease-in-out;
-}
-
-.animate-fadeInRight {
-  animation: fadeInRight 1s ease-in-out;
-}
-</style>

@@ -1,65 +1,69 @@
 ---
 import TranslateIcon from '../icons/TranslateIcon.astro';
 ---
-
 <script is:inline>
-  // Obtener el idioma guardado en localStorage o establecer el predeterminado a "es"
-  const savedLang = localStorage.getItem('lang') || 'es';
-  
-  // Cambiar idioma y actualizar en la interfaz
-  const switchLanguage = () => {
-    const currentLang = localStorage.getItem('lang') || 'es';
-    const newLang = currentLang === 'en' ? 'es' : 'en';
-    
-    localStorage.setItem('lang', newLang);
-    document.documentElement.lang = newLang;
-    
-    fetch(`/locales/${newLang}.json`)
-      .then(response => response.json())
-      .then(translations => {
-        document.querySelectorAll('[data-i18n]').forEach(element => {
-          const key = element.dataset.i18n;
-          element.textContent = translations[key] || element.textContent;
-        });
-      });
+  const DEFAULT_LANG = 'es';
+  const SUPPORTED_LANGS = ['es', 'en'];
+  const translationsCache = {};
 
-    // Actualizar el idioma mostrado
-    const languageLabel = document.getElementById('language-label');
-    languageLabel.textContent = newLang === 'en' ? 'EN' : 'ES';
-  }
+  const getNestedValue = (obj, path) =>
+    path.split('.').reduce((acc, part) => acc && acc[part], obj);
 
-  // Establecer el idioma al cargar la página
-  document.addEventListener('DOMContentLoaded', () => {
-    const languageLabel = document.getElementById('language-label');
-    languageLabel.textContent = savedLang === 'en' ? 'EN' : 'ES';
-    
-    // Configurar el evento de clic para cambiar el idioma
-    const languageSwitcher = document.querySelector('.language-switcher-container');
-    if (languageSwitcher) {
-      languageSwitcher.addEventListener('click', switchLanguage);
+  const applyTranslations = (translations) => {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      const value = getNestedValue(translations, key);
+      if (value) {
+        el.innerHTML = value;
+      }
+    });
+  };
+
+  const loadLanguage = async (lang) => {
+    if (!translationsCache[lang]) {
+      const res = await fetch(`/locales/${lang}.json`);
+      translationsCache[lang] = await res.json();
     }
+
+    applyTranslations(translationsCache[lang]);
+    document.documentElement.lang = lang;
+
+    const label = document.getElementById('language-label');
+    if (label) label.textContent = lang.toUpperCase();
+  };
+
+  const toggleLanguage = async () => {
+    const current = localStorage.getItem('lang') || DEFAULT_LANG;
+    const next = current === 'en' ? 'es' : 'en';
+    localStorage.setItem('lang', next);
+    await loadLanguage(next);
+  };
+
+  document.addEventListener('astro:page-load', async () => {
+    const lang = localStorage.getItem('lang') || DEFAULT_LANG;
+    localStorage.setItem('lang', lang);
+
+    await loadLanguage(lang);
+
+    document
+      .querySelector('.language-switcher-container')
+      ?.addEventListener('click', toggleLanguage);
   });
 </script>
-<div class="language-switcher-container fixed bottom-6  left-6 z-50">
-  <div class="
-    relative
-    flex items-center
-    justify-center
-    w-16 h-16
-    border rounded-full
-    bg-white bg-opacity-60
-    dark:bg-black dark:bg-opacity-60
-    hover:bg-opacity-80
-    transition-all duration-200
-    cursor-pointer
-    group
-    hover:ring-2 hover:ring-black
-    dark:hover:ring-2 dark:hover:ring-white
-  ">
 
-  <TranslateIcon class="w-6 h-6 text-black dark:text-white" />
-    <span id="language-label" class="text-black dark:text-white  font-semibold mr-2">EN</span>
-
+<div class="language-switcher-container fixed bottom-6 left-6 z-50">
+  <div
+    class="relative flex items-center justify-center w-16 h-16 rounded-full
+           bg-white/60 dark:bg-black/60 cursor-pointer
+           hover:ring-2 hover:ring-black dark:hover:ring-white
+           transition-all duration-200"
+  >
+    <TranslateIcon class="w-6 h-6 text-black dark:text-white" />
+    <span
+      id="language-label"
+      class="ml-1 font-semibold text-black dark:text-white"
+    >
+      ES
+    </span>
   </div>
 </div>
-

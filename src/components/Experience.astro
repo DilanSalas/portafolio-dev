@@ -1,43 +1,18 @@
 ---
-import ExperienceItem from './ExperienceItem.astro';
+import ExperienceItem from './ExperienceItem.astro'
+import { t } from '../i18n'
+import type { Lang } from '../i18n'
+
+const lang: Lang = Astro.url.pathname.startsWith('/en') ? 'en' : 'es'
 
 const experience = [
-  {
-    date: 'February 2022',
-    title: 'Application UI code in Tailwind CSS',
-    description: 'Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.',
-    link: '#',
-    linkText: 'Learn more'
-  },
-  {
-    date: 'February 2022',
-    title: 'Application UI code in Tailwind CSS',
-    description: 'Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.',
-    link: '#',
-    linkText: 'Learn more'
-  },
-
-  {
-    date: 'February 2022',
-    title: 'Application UI code in Tailwind CSS',
-    description: 'Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.',
-    link: '#',
-    linkText: 'Learn more'
-  },
-
-
-];
+  t(lang, 'experience.itekIntern'),
+  t(lang, 'experience.itekEngineer')
+]
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
+<ol>
   {experience.map(item => (
-    <ExperienceItem
-      date={item.date}
-      title={item.title}
-      description={item.description}
-      link={item.link}
-      linkText={item.linkText}
-    />
+    <ExperienceItem {...item} />
   ))}
 </ol>
-

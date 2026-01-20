@@ -1,13 +1,13 @@
 ---
 import ModeToogle from "./ModeToogle.astro";
-import LanguageSwitcher from "./LenguageSwitcher.astro"
+import LanguageSwitcher from "./LenguageSwitcher.astro";
 
 const navLinks = [
-  { href: '#top', text: 'Home' },
-  { href: '#studies', text: 'Studies' },
-  { href: '#projects', text: 'Projects' },
-  { href: '#about', text: 'About' },
-  { href: '#contact', text: 'Contact' }
+  { href: '#top', key: 'nav.home' },
+  { href: '#studies', key: 'nav.studies' },
+  { href: '#projects', key: 'nav.projects' },
+  { href: '#about', key: 'nav.about' },
+  { href: '#contact', key: 'nav.contact' }
 ];
 ---
 <header class="sticky top-0 z-50 w-full bg-[rgba(240,248,255,0.9)] dark:bg-[#1c173442] shadow-sm">
@@ -15,8 +15,9 @@ const navLinks = [
     <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
 
       <div class="flex items-center justify-between w-full md:w-auto">
-        <ModeToogle/>
+        <ModeToogle />
         <LanguageSwitcher />
+
         <div class="mx-5"> 
           <img
             src="/perfil.jpg"
@@ -24,78 +25,42 @@ const navLinks = [
             class="rounded-full w-16 h-16 md:w-20 md:h-20"
           />
         </div>
+
         <button
           id="mobile-menu-toggle"
           class="md:hidden text-gray-600 focus:outline-none"
           aria-label="Toggle mobile menu"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
 
       <nav
         id="mobile-menu"
-        class="
-          w-full md:w-auto
-          hidden md:block
-          transition-all duration-300 ease-in-out
-        "
+        class="w-full md:w-auto hidden md:block transition-all duration-300 ease-in-out"
       >
-        <ul class="
-          flex flex-col md:flex-row
-          gap-4 md:gap-14
-          justify-center
-          items-center
-          text-center md:text-left
-        ">
+        <ul class="flex flex-col md:flex-row gap-4 md:gap-14 justify-center items-center">
           {navLinks.map((link) => (
             <li>
               <a
                 href={link.href}
-                class="
-                  text-gray-600
-                  hover:text-gray-900
-                  transition-colors
-                  duration-200
-                  px-3 py-2
-                  rounded-md
-                  hover:bg-gray-100
-                  dark:text-gray-300
-                  dark:hover:text-white
-                  dark:hover:bg-gray-700
-                "
-                data-i18n={`${link.text}`}
+                class="text-gray-600 hover:text-gray-900 transition-colors duration-200
+                       px-3 py-2 rounded-md hover:bg-gray-100
+                       dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700"
+                data-i18n={link.key}
               >
-                {link.text}
+                {/* fallback */}
+                {link.key.replace('nav.', '')}
               </a>
             </li>
           ))}
         </ul>
       </nav>
+
     </div>
   </div>
 </header>
-
-<script>
-  document.addEventListener('astro:page-load', () => {
-    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuToggle?.addEventListener('click', () => {
-      mobileMenu?.classList.toggle('hidden');
-    });
-  });
-</script>

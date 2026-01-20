@@ -1,37 +1,42 @@
 ---
 import Brain from "../icons/Brain.astro";
+import { t } from "../i18n";
+import type { Lang } from "../i18n";
+
+const lang: Lang = Astro.url.pathname.startsWith("/en") ? "en" : "es";
+
+const about = t(lang, "about");
 ---
 
 <div class="py-12 lg:py-20 pb-16 mt-8 lg:mt-16">
-    <div class="text-3xl font-semibold mb-8 flex gap-x-4 items-center text-center lg:text-left" >
-        <Brain class="size-6 text-blue-500" />
-        <h2 class="text-2xl font-semibold" data-i18n="about_title">About Me</h2>
-      </div>
-      
-    <p class="text-base sm:text-lg opacity-80 max-w-[700px] mt-4" data-i18n="text1">
-      I'm a web developer with experience in designing interactive UIs and creating Full Stack solutions. I enjoy learning new technologies and improving my skills to build efficient, scalable apps.
-    </p>
-  
-    <div class="mt-4">
-      <h3 class="text-2xl font-semibold mb-3 " data-i18n="label2">Languages & Tools</h3>
-      <ul class="list-disc pl-5 text-lg" >
-        <li data-i18n="list1"><strong>Programming Languages:</strong> Java, Python, C#, JavaScript, TypeScript</li>
-        <li data-i18n="list2"><strong>Frameworks & Libraries:</strong> React, Astro, .NET, MERN (MongoDB, Express, React, Node.js), Tailwind CSS, Oak (Deno)</li>
-        <li data-i18n="list3"><strong>Databases:</strong> SQL, MySQL; design and query optimization</li>
-        <li data-i18n="list4"><strong>Tools & Methodologies:</strong> Node.js, Yarn, Docker, Git, Jest, Figma; best business practices, systems analysis & design</li>
-  
-      </ul>
-    </div>
-  
-    <div class="mt-4">
-      <h3 class="text-2xl font-semibold mb-3 " data-i18n="label3">Skills</h3>
-      <ul class="list-disc pl-5 text-lg">
-        <li data-i18n="list5"><strong>Frontend Development:</strong> Design & development of interactive, responsive UIs with HTML, CSS, JavaScript, and React, ensuring a smooth, engaging experience.</li>
-        <li data-i18n="list6"><strong>UX/UI Optimization:</strong> Creating effective landing pages optimized for conversion, applying modern design & user experience principles.</li>
-        <li data-i18n="list7"><strong>Databases:</strong> Managing relational (MySQL) and non-relational databases, focusing on efficient design and optimized queries.</li>
-        <li data-i18n="list8"><strong>Tech Integration:</strong> Implementing Full Stack projects with modern frameworks like MERN and tools like Docker, Socket.io, and Postman.</li>
-       
-      </ul>
-    </div>
+  <div class="text-3xl font-semibold mb-8 flex gap-x-4 items-center text-center lg:text-left">
+    <Brain class="size-6 text-blue-500" />
+    <h2 class="text-2xl font-semibold">{about.title}</h2>
   </div>
-  
+
+  <p class="text-base sm:text-lg opacity-80 max-w-[700px] mt-4">
+    {about.description}
+  </p>
+
+  <div class="mt-4">
+    <h3 class="text-2xl font-semibold mb-3">{about.languagesTitle}</h3>
+    <ul class="list-disc pl-5 text-lg">
+      {about.languages.map(item => (
+        <li>
+          <strong>{item.label}:</strong> {item.value}
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="mt-4">
+    <h3 class="text-2xl font-semibold mb-3">{about.skillsTitle}</h3>
+    <ul class="list-disc pl-5 text-lg">
+      {about.skills.map(item => (
+        <li>
+          <strong>{item.label}:</strong> {item.value}
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>

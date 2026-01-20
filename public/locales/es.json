@@ -2,10 +2,8 @@
   "Home": "Inicio",
   "About": "Sobre",
   "Contact": "Contacto",
-  "Studies": "Estudios", 
+  "Studies": "Estudios",
   "Projects": "Proyectos",
-
-
 
   "header_title": "Hola, soy Dyllan Salas",
   "availability": "Desarrollador Web Disponible",
@@ -14,54 +12,68 @@
   "description_part2": "Tengo experiencia en desarrollo front-end y back-end, y",
   "description_highlight": "siempre busco nuevos desafíos para llevar mis habilidades al siguiente nivel",
   "description_part3": "Ya sea que necesites ayuda con tu sitio web o quieras aprender más sobre desarrollo web, estoy aquí para ayudarte.",
+
   "linkedin": "LinkedIn",
   "github": "GitHub",
+
   "studies_title": "Cursos y Estudios",
   "projects_title": "Proyectos",
   "banner_title": "Technologies",
   "about_title": "About Me",
   "contact_title": "Contacto",
 
-    "0title": "Universidad de Costa Rica | Informática Empresarial",
-    "0date": "4to año en progreso",
-    "0description": "Cursando la licenciatura en Informática Empresarial. Tengo un fuerte interés en las ciencias de la computación y siempre busco nuevos desafíos para llevar mis habilidades al siguiente nivel.",
-    
-    "1title": "Udemy | React: De cero a experto (Hooks y MERN)",
-    "1date": "Completado",
-    "1description": "Context API, MERN, Hooks, Firestore, JWT, Testing, Autenticaciones, Despliegues, CRUD, Logs, MUI, Múltiples Routers...",
-    
-    "2title": "Escuela de Enseñanza Real Internacional | Certificación de Nivel B2 de Inglés",
-    "2date": "Completado",
-    "2description": "Obtuve un nivel B2 de inglés, demostrando sólidas habilidades de comprensión y comunicación en contextos profesionales y académicos. Enfoque en mejorar habilidades de lectura, escritura, escucha y habla para entornos cotidianos y técnicos.",
-    
-    "ViewCode": "Ver Código",
+  "0title": "Universidad de Costa Rica | Informática Empresarial",
+  "0date": "Completado",
+  "0description": "Finalicé el bachillerato en Informática Empresarial. Mis estudios están completamente concluidos y he desarrollado un fuerte interés por la tecnología y la resolución de problemas, buscando siempre nuevos desafíos para seguir creciendo profesionalmente.",
 
-    "VisitProject": "Visitar Proyecto",
+  "2title": "Escuela de Enseñanza Real Internacional | Certificación de Nivel B2 de Inglés",
+  "2date": "Completado",
+  "2description": "Obtuve un nivel B2 de inglés, demostrando sólidas habilidades de comprensión y comunicación en contextos profesionales y académicos. Enfoque en mejorar habilidades de lectura, escritura, escucha y habla para entornos cotidianos y técnicos.",
 
-    "0descriptionP": "Un sistema de gestión de restaurantes diseñado para optimizar las operaciones y mejorar la experiencia gastronómica. Los clientes pueden consultar los menús, realizar pedidos por adelantado y solicitar asistencia, mientras que los camareros gestionan las mesas y reciben notificaciones en tiempo real. La cocina se beneficia del seguimiento de pedidos en directo y de la comunicación instantánea con el personal.",
-    "1descriptionP": "Este sistema de punto de venta (POS) desarrollado con Windows Forms está diseñado para gestionar de manera eficiente las ventas, el inventario y las operaciones de los clientes en un entorno comercial minorista. La integración con SAP Business One permite la sincronización de datos clave, como inventario, transacciones e informes administrativos, lo que garantiza un flujo de información centralizado y automatizado.",
-    "2descriptionP": "TimeGrid es un calendario en línea para la gestión eficiente de eventos y tareas. Proporciona una interfaz moderna con múltiples vistas y opciones de personalización, incluyendo la selección de color para los eventos. Los usuarios pueden crear, editar y organizar sus horarios de manera fácil, permitiendo la colaboración con la gestión de eventos compartidos.",
-    "3descriptionP": "SmileNotes es una aplicación de diario digital enfocada en promover la bienestar mental a través de visitas diarias y reflexiones guiadas. Ofrece a los usuarios un espacio privado y apoyo para escribir sobre sus pensamientos, rastrear los estados de ánimo y desarrollar la conciencia. Con mensajes amigables, recordatorios de mindfulness y mensajes inspiradores, SmileNotes incentiva a los usuarios a mantener un diario saludable que apoye la resistencia emocional y el crecimiento personal. Ya sea que estés gestionando la ansiedad, se sienta estresado o simplemente cultivando positividad, SmileNotes es tu compañero para mejorar la salud mental - una nota por vez.",
-    
-      "label1": "Acerca de",
-      "text1": "Soy un desarrollador web con experiencia en el diseño de interfaces interactivas y la creación de soluciones Full Stack. Disfruto aprender nuevas tecnologías y mejorar mis habilidades para construir aplicaciones eficientes y escalables.",
-      "label2": "Lenguajes y Herramientas",
-      "list1": "Lenguajes de Programación: Java, Python, C#, JavaScript, TypeScript",
-      "list2": "Frameworks y Bibliotecas: React, Astro, .NET, MERN (MongoDB, Express, React, Node.js), Tailwind CSS, Oak (Deno)",
-      "list3": "Bases de Datos: SQL, MySQL; diseño y optimización de consultas",
-      "list4": "Herramientas y Metodologías: Node.js, Yarn, Docker, Git, Jest, Figma; mejores prácticas empresariales, análisis y diseño de sistemas",
-      "label3": "Habilidades",
-      "list5": "Desarrollo Frontend: Diseño y desarrollo de interfaces interactivas y responsivas con HTML, CSS, JavaScript y React, asegurando una experiencia fluida y atractiva.",
-      "list6": "Optimización UX/UI: Creación de páginas de aterrizaje efectivas optimizadas para la conversión, aplicando principios modernos de diseño y experiencia del usuario.",
-      "list7": "Bases de Datos: Gestión de bases de datos relacionales (MySQL) y no relacionales, con enfoque en diseño eficiente y consultas optimizadas.",
-      "list8": "Integración de Tecnología: Implementación de proyectos Full Stack con frameworks modernos como MERN y herramientas como Docker, Socket.io y Postman.",
-    
-   "contactMe1": "Contactame",
-   "contactMe": "Estoy disponible para nuevos proyectos, colaboraciones o cualquier consulta. ¡No dudes en contactarme!",
+  "ViewCode": "Ver Código",
+  "VisitProject": "Visitar Proyecto",
 
-    "Phone": "📞 Celular:",
-    "Email": "📧 Correo Electrónico:",
-    "Location": "📍 Ubicación:",
-    "Repositories": "Repositorios",
-    "AllRightsReserved": "Todos los Derechos Reservados"
+  "0descriptionP": "Un sistema de gestión de restaurantes diseñado para optimizar las operaciones y mejorar la experiencia gastronómica. Los clientes pueden consultar los menús, realizar pedidos por adelantado y solicitar asistencia, mientras que los camareros gestionan las mesas y reciben notificaciones en tiempo real. La cocina se beneficia del seguimiento de pedidos en directo y de la comunicación instantánea con el personal.",
+  "1descriptionP": "Este sistema de punto de venta (POS) desarrollado con Windows Forms está diseñado para gestionar de manera eficiente las ventas, el inventario y las operaciones de los clientes en un entorno comercial minorista. La integración con SAP Business One permite la sincronización de datos clave, como inventario, transacciones e informes administrativos, lo que garantiza un flujo de información centralizado y automatizado.",
+  "2descriptionP": "TimeGrid es un calendario en línea para la gestión eficiente de eventos y tareas. Proporciona una interfaz moderna con múltiples vistas y opciones de personalización, incluyendo la selección de color para los eventos. Los usuarios pueden crear, editar y organizar sus horarios de manera fácil, permitiendo la colaboración con la gestión de eventos compartidos.",
+  "3descriptionP": "SmileNotes es una aplicación de diario digital enfocada en promover el bienestar mental a través de visitas diarias y reflexiones guiadas. Ofrece a los usuarios un espacio privado y apoyo para escribir sobre sus pensamientos, rastrear los estados de ánimo y desarrollar la conciencia. Con mensajes amigables, recordatorios de mindfulness y mensajes inspiradores, SmileNotes incentiva a los usuarios a mantener un diario saludable que apoye la resiliencia emocional y el crecimiento personal.",
+
+  "label1": "Acerca de",
+  "text1": "Soy un desarrollador web con experiencia en el diseño de interfaces interactivas y la creación de soluciones Full Stack. Disfruto aprender nuevas tecnologías y mejorar mis habilidades para construir aplicaciones eficientes y escalables.",
+
+  "label2": "Lenguajes y Herramientas",
+  "list1": "Lenguajes de Programación: Java, Python, C#, JavaScript, TypeScript",
+  "list2": "Frameworks y Bibliotecas: React, Astro, .NET, MERN (MongoDB, Express, React, Node.js), Tailwind CSS, Oak (Deno)",
+  "list3": "Bases de Datos: SQL, MySQL; diseño y optimización de consultas",
+  "list4": "Herramientas y Metodologías: Node.js, Yarn, Docker, Git, Jest, Figma; mejores prácticas empresariales, análisis y diseño de sistemas",
+
+  "label3": "Habilidades",
+  "list5": "Desarrollo Frontend: Diseño y desarrollo de interfaces interactivas y responsivas con HTML, CSS, JavaScript y React, asegurando una experiencia fluida y atractiva.",
+  "list6": "Optimización UX/UI: Creación de páginas de aterrizaje efectivas optimizadas para la conversión, aplicando principios modernos de diseño y experiencia del usuario.",
+  "list7": "Bases de Datos: Gestión de bases de datos relacionales (MySQL) y no relacionales, con enfoque en diseño eficiente y consultas optimizadas.",
+  "list8": "Integración de Tecnología: Implementación de proyectos Full Stack con frameworks modernos como MERN y herramientas como Docker, Socket.io y Postman.",
+
+  "contactMe1": "Contáctame",
+  "contactMe": "Estoy disponible para nuevos proyectos, colaboraciones o cualquier consulta. ¡No dudes en contactarme!",
+
+  "Phone": "📞 Celular:",
+  "Email": "📧 Correo Electrónico:",
+  "Location": "📍 Ubicación:",
+  "Repositories": "Repositorios",
+  "AllRightsReserved": "Todos los Derechos Reservados",
+
+  "experience": {
+    "itekIntern": {
+      "title": "Pasante de Tecnologías de Información | ITEK Soluciones Integrales S.A.",
+      "date": "Julio 2025 – Diciembre 2025",
+      "description": "Inicio de pasantía en el área de Tecnologías de Información, participando en el soporte y desarrollo de soluciones internas. Colaboré en la automatización de procesos, creación de formularios y flujos de trabajo, así como en la administración y adaptación de sistemas empresariales, fortaleciendo mis habilidades técnicas y de trabajo en equipo.",
+      "linkText": "Más información"
+    },
+    "itekEngineer": {
+      "title": "Ingeniero en Tecnologías de Información | ITEK Soluciones Integrales S.A.",
+      "date": "Enero 2026 – Presente",
+      "description": "Contratado como Ingeniero en Tecnologías de Información, enfocado en el desarrollo y mantenimiento de soluciones tecnológicas para la organización. Trabajo con tecnologías modernas orientadas a la automatización, gestión de datos y mejora de procesos, participando activamente en entornos colaborativos y buenas prácticas de desarrollo.",
+      "linkText": "Más información"
+    }
+  }
 }

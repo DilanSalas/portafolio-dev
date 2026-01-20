@@ -1,0 +1,146 @@
+{
+  "experience": {
+    "itekIntern": {
+      "title": "Pasante de Tecnologías de Información | ITEK Soluciones Integrales S.A.",
+      "date": "Julio 2025 – Diciembre 2025",
+      "description": "Inicio de pasantía en el área de TI, colaborando en automatización de procesos y gestión de sistemas empresariales."
+    },
+    "itekEngineer": {
+      "title": "Ingeniero en Tecnologías de Información | ITEK Soluciones Integrales S.A.",
+      "date": "Enero 2026 – Presente",
+      "description": "Ingeniero de TI enfocado en automatización, gestión de datos y mejora de procesos."
+    }
+  },
+
+  
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador web con experiencia en el diseño de interfaces interactivas y la creación de soluciones Full Stack. Disfruto aprender nuevas tecnologías y mejorar mis habilidades para construir aplicaciones eficientes y escalables.",
+
+    "languagesTitle": "Lenguajes y Herramientas",
+    "languages": [
+      {
+        "label": "Lenguajes de Programación",
+        "value": "Java, Python, C#, JavaScript, TypeScript"
+      },
+      {
+        "label": "Frameworks y Librerías",
+        "value": "React, Astro, .NET, MERN (MongoDB, Express, React, Node.js), Tailwind CSS, Oak (Deno)"
+      },
+      {
+        "label": "Bases de Datos",
+        "value": "SQL, MySQL; diseño y optimización de consultas"
+      },
+      {
+        "label": "Herramientas y Metodologías",
+        "value": "Node.js, Yarn, Docker, Git, Jest, Figma; buenas prácticas empresariales, análisis y diseño de sistemas"
+      }
+    ],
+
+    "skillsTitle": "Habilidades",
+    "skills": [
+      {
+        "label": "Desarrollo Frontend",
+        "value": "Diseño y desarrollo de interfaces interactivas y responsivas con HTML, CSS, JavaScript y React, garantizando una experiencia fluida y atractiva."
+      },
+      {
+        "label": "Optimización UX/UI",
+        "value": "Creación de páginas de aterrizaje efectivas optimizadas para la conversión, aplicando principios modernos de diseño y experiencia de usuario."
+      },
+      {
+        "label": "Bases de Datos",
+        "value": "Gestión de bases de datos relacionales (MySQL) y no relacionales, con enfoque en diseño eficiente y consultas optimizadas."
+      },
+      {
+        "label": "Integración Tecnológica",
+        "value": "Implementación de proyectos Full Stack con frameworks modernos como MERN y herramientas como Docker, Socket.io y Postman."
+      }
+    ]
+  },
+
+  "availability": "Disponible para trabajar",
+
+  
+  "footer": {
+    "allRightsReserved": "Todos los derechos reservados",
+    "home": "Inicio",
+    "studies": "Estudios",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  
+  },
+  
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "Estoy disponible para nuevos proyectos, colaboraciones o cualquier consulta. ¡No dudes en escribirme!",
+    "email": "📧 Correo:",
+    "phone": "📞 Teléfono:",
+    "location": "📍 Ubicación:",
+    "linkedin": "🔗 LinkedIn:",
+    "github": "💻 GitHub:",
+    "repositories": "Repositorios"
+  },
+
+  "nav": {
+    "home": "Inicio",
+    "studies": "Estudios",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+
+  
+  "projects": {
+    "tapnserve": {
+      "title": "TapNServe",
+      "description": "Un sistema de gestión de restaurantes diseñado para optimizar las operaciones y mejorar la experiencia gastronómica..."
+    },
+    "pos": {
+      "title": "Point of Sale",
+      "description": "Sistema POS desarrollado con Windows Forms para gestionar ventas, inventario y operaciones comerciales..."
+    },
+    "timegrid": {
+      "title": "TimeGrid",
+      "description": "Calendario en línea para la gestión eficiente de eventos y tareas con múltiples vistas y personalización..."
+    },
+    "smilenotes": {
+      "title": "SmileNotes",
+      "description": "Aplicación de diario digital enfocada en el bienestar mental mediante reflexiones guiadas y seguimiento emocional..."
+    }
+  },
+  
+  "study_1": {
+    "title": "Universidad de Costa Rica | Informática Empresarial",
+    "date": "Completado",
+    "description": "Bachillerato en Informática Empresarial completado, con un fuerte interés en la tecnología y el crecimiento profesional continuo."
+  },
+  "study_2": {
+    "title": "Escuela de Enseñanza Real Internacional | Certificación B2 en Inglés",
+    "date": "Completado",
+    "description": "Nivel B2 de inglés alcanzado, demostrando sólidas habilidades de comprensión y comunicación en contextos académicos y profesionales."
+  },
+  
+  "header_title": "Hola, soy Dyllan Salas",
+  "availability": "Desarrollador Web Disponible",
+  "position": "Diseñador y Desarrollador Web",
+
+  "description_part1": "Soy un diseñador y desarrollador web con pasión por crear sitios web atractivos y funcionales.",
+  "description_part2": "Tengo experiencia tanto en desarrollo frontend como backend, y",
+  "description_highlight": "siempre estoy buscando nuevos retos para llevar mis habilidades al siguiente nivel",
+  "description_part3": "Ya sea que necesites ayuda con tu sitio web o simplemente quieras aprender más sobre desarrollo web, estoy aquí para ayudarte.",
+
+  "linkedin": "LinkedIn",
+  "github": "GitHub",
+
+  "studies_title": "Cursos y Estudios",
+  "projects_title": "Proyectos",
+  "contact_title": "Contacto"
+}
+
+
+
+
+
+
+

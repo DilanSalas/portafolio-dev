@@ -5,7 +5,6 @@
   "Studies": "Studies",
   "Projects": "Projects",
 
-
   "header_title": "Hi, I'm Dyllan Salas",
   "availability": "Available Web Developer",
   "position": "Web Designer & Developer",
@@ -13,8 +12,10 @@
   "description_part2": "I have experience in both front-end and back-end development, and",
   "description_highlight": "I am always looking for new challenges to push my skills to the next level",
   "description_part3": "Whether you need help with your website or just want to learn more about web development, I'm here to assist you.",
+
   "linkedin": "LinkedIn",
   "github": "GitHub",
+
   "studies_title": "Courses and Studies",
   "projects_title": "Projects",
   "banner_title": "Technologies",
@@ -22,46 +23,57 @@
   "contact_title": "Contact",
 
   "0title": "University of Costa Rica | Business Informatics",
-  "0date": "4th year in progress",
-  "0description": "Currently pursuing a degree in Business Informatics. I have a strong interest in computer science and am always seeking new challenges to take my skills to the next level.",
-  
-  "1title": "Udemy | React: From Zero to Expert (Hooks and MERN)",
-  "1date": "Completed",
-  "1description": "Context API, MERN, Hooks, Firestore, JWT, Testing, Authentication, Deployments, CRUD, Logs, MUI, Multiple Routers...",
-  
+  "0date": "Completed",
+  "0description": "Bachelor’s degree in Business Informatics completed. My studies are fully finished, and I have developed a strong interest in technology and problem-solving, always seeking new challenges for continuous professional growth.",
+
   "2title": "Escuela de Enseñanza Real Internacional | B2 English Certification",
   "2date": "Completed",
-  "2description": "I obtained a B2 level in English, demonstrating strong comprehension and communication skills in professional and academic contexts. Focused on improving reading, writing, listening, and speaking skills for everyday and technical environments.",
-
+  "2description": "Achieved a B2 level in English, demonstrating strong comprehension and communication skills in professional and academic contexts. Focused on improving reading, writing, listening, and speaking skills for everyday and technical environments.",
 
   "ViewCode": "View Code",
-
   "VisitProject": "Visit Project",
 
-  "0descriptionP": "A restaurant management system designed to streamline operations and enhance the dining experience. Customers can browse menus, place pre-orders, and request assistance, while waitstaff manage tables and receive real-time notifications. The kitchen benefits from live order tracking and instant communication with the staff",
-  "1descriptionP": "This point of sale (POS) system developed with Windows Forms is designed to efficiently manage sales, inventory, and customer operations in a retail business environment. The integration with SAP Business One allows for the synchronization of key data, such as inventory, transactions, and administrative reports, ensuring a centralized and automated flow of information. ",
-  "2descriptionP": "TimeGrid is an online calendar for efficient event and task management. It offers a modern interface with multiple views and customization options, including color selection for events. Users can easily create, edit, and organize their schedules while enabling collaboration with shared event management.",
-  "3descriptionP": "SmileNotes is a digital journaling app focused on promoting mental well-being through daily emotional check-ins and guided reflections. It offers users a private, supportive space to write about their thoughts, track moods, and develop self-awareness. With user-friendly prompts, mindfulness reminders, and inspiring messages, SmileNotes encourages healthy journaling habits that support emotional resilience and personal growth. Whether youre managing anxiety, coping with stress, or simply cultivating positivity, SmileNotes is your companion for better mental health—one note at a time.",
+  "0descriptionP": "A restaurant management system designed to streamline operations and enhance the dining experience. Customers can browse menus, place pre-orders, and request assistance, while waitstaff manage tables and receive real-time notifications. The kitchen benefits from live order tracking and instant communication with the staff.",
+  "1descriptionP": "This point-of-sale (POS) system developed with Windows Forms is designed to efficiently manage sales, inventory, and customer operations in a retail business environment. Integration with SAP Business One enables synchronization of key data such as inventory, transactions, and administrative reports, ensuring a centralized and automated information flow.",
+  "2descriptionP": "TimeGrid is an online calendar for efficient event and task management. It provides a modern interface with multiple views and customization options, including event color selection. Users can easily create, edit, and organize schedules while enabling collaboration through shared event management.",
+  "3descriptionP": "SmileNotes is a digital journaling app focused on promoting mental well-being through daily emotional check-ins and guided reflections. It provides users with a private and supportive space to write, track moods, and build self-awareness. With friendly prompts, mindfulness reminders, and inspiring messages, SmileNotes encourages healthy journaling habits that support emotional resilience and personal growth.",
+
   "label1": "About",
-  "text1": "I'm a web developer with experience in designing interactive UIs and creating Full Stack solutions. I enjoy learning new technologies and improving my skills to build efficient, scalable apps.",
+  "text1": "I'm a web developer with experience designing interactive user interfaces and building Full Stack solutions. I enjoy learning new technologies and continuously improving my skills to create efficient and scalable applications.",
+
   "label2": "Languages & Tools",
   "list1": "Programming Languages: Java, Python, C#, JavaScript, TypeScript",
   "list2": "Frameworks & Libraries: React, Astro, .NET, MERN (MongoDB, Express, React, Node.js), Tailwind CSS, Oak (Deno)",
-  "list3": "Databases: SQL, MySQL; design and query optimization",
-  "list4": "Tools & Methodologies: Node.js, Yarn, Docker, Git, Jest, Figma; best business practices, systems analysis & design",
+  "list3": "Databases: SQL, MySQL; query design and optimization",
+  "list4": "Tools & Methodologies: Node.js, Yarn, Docker, Git, Jest, Figma; best practices in business environments, systems analysis, and design",
+
   "label3": "Skills",
-  "list5": "Frontend Development: Design & development of interactive, responsive UIs with HTML, CSS, JavaScript, and React, ensuring a smooth, engaging experience.",
-  "list6": "UX/UI Optimization: Creating effective landing pages optimized for conversion, applying modern design & user experience principles.",
-  "list7": "Databases: Managing relational (MySQL) and non-relational databases, focusing on efficient design and optimized queries.",
-  "list8": "Tech Integration: Implementing Full Stack projects with modern frameworks like MERN and tools like Docker, Socket.io, and Postman.",
+  "list5": "Frontend Development: Design and development of interactive and responsive user interfaces using HTML, CSS, JavaScript, and React, ensuring a smooth and engaging user experience.",
+  "list6": "UX/UI Optimization: Creating effective conversion-optimized landing pages by applying modern design and user experience principles.",
+  "list7": "Databases: Management of relational and non-relational databases, with a focus on efficient design and optimized queries.",
+  "list8": "Technology Integration: Implementation of Full Stack projects using modern frameworks like MERN and tools such as Docker, Socket.io, and Postman.",
 
   "contactMe1": "Contact me",
-  "contactMe": " I am available for new projects, collaborations, or any inquiries. Feel free to reach out!",
+  "contactMe": "I am available for new projects, collaborations, or any inquiries. Feel free to reach out!",
+
   "Phone": "📞 Phone:",
-    "Email": "📧 Email:",
-    "Location": "📍 Location:",
-    "Repositories": "Repositories",
-    "AllRightsReserved": "All Rights Reserved"
+  "Email": "📧 Email:",
+  "Location": "📍 Location:",
+  "Repositories": "Repositories",
+  "AllRightsReserved": "All Rights Reserved",
 
-
+  "experience": {
+    "itekIntern": {
+      "title": "Information Technology Intern | ITEK Soluciones Integrales S.A.",
+      "date": "July 2025 – December 2025",
+      "description": "Started an internship in the Information Technology department, participating in the support and development of internal solutions. Collaborated on process automation, creation of forms and workflows, as well as administration and adaptation of enterprise systems, strengthening technical and teamwork skills.",
+      "linkText": "Learn more"
+    },
+    "itekEngineer": {
+      "title": "Information Technology Engineer | ITEK Soluciones Integrales S.A.",
+      "date": "January 2026 – Present",
+      "description": "Hired as an Information Technology Engineer, focused on developing and maintaining technological solutions for the organization. Working with modern technologies oriented toward automation, data management, and process improvement while actively participating in collaborative environments and development best practices.",
+      "linkText": "Learn more"
+    }
+  }
 }
